@@ -1,33 +1,119 @@
-<!DOCTYPE html>
+
 
 <html>
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>colors</title>
+<title>
+</title>
+<style>
+input[type="search"]{ 
+padding:10px;
+border-radius:20px;
+border: 1px solid #ccc;
+width:250px;}
+button {padding: 10px 20px;
+background-color:#007bff;
+color: white;
+border:none;
+border-radius:20px;
+cursor:pointer;}
+
+ ol{ margin-top:20px;}
+ li{ margin-bottom:5px;}
+
+
+</style>
 </head>
 <body>
-  <h1>
-    colors
-  </h1> 
-  <h1><center>
-  <ol type="1.">
-    <li><a href="black#c.html">black#c</a></li>
-    <li><a href="blue#c.html">blue#c</a></li>
-    <li><a href="yellow#c.html">yellow#c</a></li>
-    <li><a href="green#c.html">green#c</a></li>
-    <li><a href="purple#c.html">purple#c</a></li>
-    <li><a href="pink#c.html">pink#c</a></li>
-    <li><a href="golden#c.html">golden#c</a></li>
-    <li><a href="silver#c.html">silver#c</a></li>
-    <li><a href="brown#c.html">brown#c</a></li>
-    <li><a href="white#c.html">white#c</a></li>
-    <li><a href="red#c.html">red#c.html</a></li>
-    <li><a href="orange#c.html">orange#c.html</a></li>
-  
-    
-  </ol>
-  </center>
-  </h1>
-</body>
-</html>
+<form action="#" method="get" onsubmit="return false">
+<input type ="search" id="searchinput" onkeyup="searchcontent()" placedholder="yaha search kare ">
+<button type="button">search</button>
+</form>
+<div id="content ">
+<ol type="1.">
+<li><a href="black.html">black</a></li>
+<li><a href="blue.html">blue</a></li>
+<li><a href="yellow.html">yellow</a></li>
+<li><a href="green.html">green</a></li>
+<li><a href="light_green.html">light green</a></li>
+<li><a href="purple.html">purple</a></li>
+<li><a href="pink.html">pink</a></li>
+<li><a href="red.html">red</a></li>
+<li><a href="light_red.html">light red</a></li>
+<li><a href="orange.html">orange</a></li>
+<li><a href="navy_blue_ink.html">navy blue ink</a></li>
+<li><a href="royal_blue_ink.html">royal blue ink</a></li>
+<li><a href="fountain_pen_blue.html">fountain   pen blue</a></li>
+<li><a href="deep_black_ink.html">deep black ink</a></li>
+<li><a href="blood_red_ink.html">blood red ink</a></li>
+<li><a href="forest_green_ink.html">forest green ink</a></li>
+<li><a href="turquoise.html">turquoise</a></li>
+<li><a href="light_black.html">light black </a></li>
+<li><a href="light_blue.html">light blue</a></li>
+<li><a href="light_yellow.html">light yellow</a></li>
+<li><a href="light_purple.html">light purple</a></li>
+<li><a href="light_pink.html">light pink </a></li>
+<li><a href="light_orange.html">light orange </a></li>
+<li><a href="silver.html">silver</a></li>
+<li><a href="light_silver.html">light silver</a></li>
+<li><a href="brown.html">brown</a></li>
+<li><a href="light_brown.html">light brown</a></li>
+<li><a href="golden.html">golden</a></li>
+<li><a href="light_golden.html">light golden</a></li>
+<li><a href="white.html">white</a></li>
+<li><a href="snow_white.html">snow white</a></li>
+<li><a href="off_white.html">off white</a></li>
+<li><a href="lvory.html">lovery</a></li>
+<li><a href="cream.html">cream</a></li>
+<li><a href="beige.html">beige</a></li>
+<li><a href="antique_white.html">antique white</a></li>
+<li><a href="sky_blue.html">sky blue</a></li>
+<li><a href="deep_sky_blue.html">deep sky blue </a></li>
+<li><a href="navy_blue.html">navy blue</a></li>
+<li><a href="royal_blue.html">royal blue</a></li>
+<li><a href="steel_blue.html">steel blue</a></li>
+<li><a href="dodger_blue.html"> dodger blue</a></li>
+<li><a href="midnight_blue.html">midnight blue</a></li>
+<li><a href="cyan.html">cyan</a></li>
+<li><a href="teal.html">teal</a></li>
+<li><a href="lemon_chiffon.html">lemon chiffon</a></li>
+<li><a href="moccasin.html">moccasin </a></li>
+<li><a href="papaya_whip.html">papaya whip</a></li>
+<li><a href="khaki.html">khaki</a></li>
+<li><a href="dark_khaki.html">dark khaki</a></li>
+<li><a href="lime.html">lime </a></li>
+<li><a href="lime_green.html">lime green</a></li>
+<li><a href="sea_green.html">sea green</a></li>
+<li><a href="olive.html">olive </a></li>
+<li><a href="spring_green.html">spring green</a></li>
+<li><a href="dark_green.html">dark green</a></li>
+<li><a href="pale_green.html">pale green</a></li>
 
+
+
+</ol>
+</div>
+
+<script>
+function searchcontent() {
+    // 1. इनपुट वैल्यू को पकड़ें और उसे छोटे अक्षरों (lowercase) में बदलें
+    let input = document.getElementById('searchinput').value.toLowerCase();
+    
+    // 2. लिस्ट के सभी <li> आइटम्स को चुनें
+    let listItems = document.getElementsByTagName('li');
+
+    // 3. पूरी लिस्ट में लूप चलाएं
+    for (let i = 0; i < listItems.length; i++) {
+        let itemText = listItems[i].textContent || listItems[i].innerText;
+        
+        // 4. अगर टाइप किया शब्द लिस्ट आइटम में मौजूद है
+        if (itemText.toLowerCase().indexOf(input) > -1) {
+            listItems[i].style.display = ""; // दिखाएँ
+        } else {
+            listItems[i].style.display = "none"; // छिपा दें
+        }
+    }
+}
+</script>
+
+</body>
+          </html>
